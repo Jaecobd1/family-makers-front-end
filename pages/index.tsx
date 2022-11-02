@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         
 
       </div>
-      <div className="w-9/12 flex lg:justify-between flex-col lg:flex-row mx-auto" >
+      <div className="w-9/12 flex lg:justify-between flex-col lg:flex-row mx-auto items-center" >
 
 
          <div className="w-96 h-96 place-self-center">
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         </div>
 
 
-        <span className="flex flex-col md:items-end items-center mr-20 ml-10">
+        <span className="flex flex-col lg:items-end items-center lg:mr-20 lg:ml-10 w-full justify-center ">
           <p className="w-96 text-center m-2">Children and caregivers will participate in a series of six 1.5-hour online engineering programs. Within these programs, families will see how engineering is relevant to their lives by connecting with engineers who grew up and currently work in a rural community. Families will collaborate to make and design for the community and celebrate solutions they have designed. 
         </p>
         <p className="w-96 text-center m-2"> 

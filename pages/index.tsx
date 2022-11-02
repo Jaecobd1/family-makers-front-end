@@ -55,12 +55,13 @@ const Home: NextPage = () => {
 
       </div>
       <div className="flex justify-center md:flex-row flex-col items-center">
-        <div className="w-96 h-96 ml-5 mr-5">
+        
+        <p className="w-96 text-center ml-5 mr-5 mt-2"> 
+            Family Makers work closely with eight rural library partners throughout the project to provide input and co-design the online engineering program. The Family Makers curriculum will be tested and refined through several cycles across eight rural library settings to ensure that we design a curriculum that is replicable and scalable. Once it is finalized, Family Makers which will be freely accessible under a Creative Commons license for any rural library to use and implement. We will also provide facilitation and technology guides as well as webinars to support rural libraries to get familiar with engineering concepts and design thinking approach. 
+        </p>
+          <div className="w-96 h-96 ml-5 mr-5">
           <Image src="/kid-math.jpeg" className="h-full object-cover w-full" height={1920} width={1920} alt="Image of kid learning math"/>
         </div>
-        <p className="w-96 text-center ml-5 mr-5 mt-2"> 
-          Family Makers work closely with eight rural library partners throughout the project to provide input and co-design the online engineering program. The Family Makers curriculum will be tested and refined through several cycles across eight rural library settings to ensure that we design a curriculum that is replicable and scalable. Once it is finalized, Family Makers which will be freely accessible under a Creative Commons license for any rural library to use and implement. We will also provide facilitation and technology guides as well as webinars to support rural libraries to get familiar with engineering concepts and design thinking approach. 
-        </p>
         </div>
       </div>
         

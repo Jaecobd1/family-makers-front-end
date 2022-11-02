@@ -11,7 +11,7 @@ function Footer() {
                 <Link href="news">News</Link>
                 <Link href="contact">Contact Us</Link>
             </div>
-            <div className="copyright mx-auto flex w-fit text-white">
+            <div className="copyright mx-auto flex w-fit text-white mt-5">
                 <span>
                     <p>Copyright &copy; Family Makers 2022 </p>
                 </span>

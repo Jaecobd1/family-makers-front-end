@@ -6,8 +6,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       
-      <Nav></Nav>
-      <Component {...pageProps} />
+      <Nav ></Nav>
+      <Component className="z-0"{...pageProps} />
       
 
       </>

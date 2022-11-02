@@ -27,7 +27,7 @@ function nav() {
     }
 
     return (
-        <nav className={!menuActive ? "flex justify-between bg-primary h-24 items-center" : "h-screen w-screen bg-primary "} >
+        <nav className={!menuActive ? "flex justify-between bg-primary h-24 items-center sticky top-0 z-10" : "h-screen w-screen bg-primary sticky top-0 z-10"} >
             
             <div className="items-center h-24 w-screen flex justify-between">
                 <div className="text-white">

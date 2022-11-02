@@ -3,7 +3,7 @@ import X from '../public/x.svg'
 import { useState } from 'react'
 import Link from 'next/link'
 
-function nav() {
+function Nav() {
     const [menuActive, setMenuActive] = useState(false);
 
     // Checks if the menu is Active
@@ -66,4 +66,4 @@ function nav() {
     )
 }
 
-export default nav
+export default Nav

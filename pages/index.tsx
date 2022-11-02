@@ -14,20 +14,20 @@ const Home: NextPage = () => {
       <div className="flex justify-center relative z-2">
         <div className="w-9/12 h-96 z-0">
           <Image src="/group-cheering.jpeg" className="object-cover w-full h-full" height={1920} width={1920} alt="Group of people around computer"></Image>
-          <div className="text-2xl flex justify-center absolute bottom-0">
-      <h1 className="bg-secondary rounded-lg p-4  mr-5 ml-5 " >Welcome to Family Makers!</h1>
+          <div className="lg:text-6xl md:text-4xl text-2xl flex justify-center absolute bottom-0">
+      <h1 className="bg-secondary/70 rounded-lg p-4  mr-5 ml-5 mb-5 text-white " >Welcome to Family Makers!</h1>
 
       </div>
         </div>
         
       </div>
       
-      <div className="flex md:justify-start justify-center w-9/12 m-auto" >
+      <div className="flex md:justify-start justify-center w-9/12 mx-auto" >
         <p className="w-1/2 text-center md:text-left m-2 w-96">Family Makers is a series of online engineering program for elementary-aged children and their caregivers to empower children to become problem solvers. Facilitated by library staff at a rural library, Family Makers provide tablets, hotspots, and engineering tools to support families to design and make engineering solutions for their communities.  </p>
       </div>
-      <div className="text-2xl flex  justify-center w-8/12 mx-auto">
+      <div className="md:text-4xl  text-2xl flex  justify-center w-8/12 mx-auto md:justify-end">
        
-        <h1 className="bg-secondary rounded-lg p-4 m-5 mr-20 text-center h-fit" >How Will Family Makers Benefit Children?</h1>
+        <h1 className="bg-secondary/70 rounded-lg p-4 m-5 md:mr-20 text-center h-fit text-grey" >How Will Family Makers Benefit Children?</h1>
         
 
       </div>
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
 
       <div className="flex w-9/12 justify-center flex-col mx-auto">
         <div className="text-2xl flex justify-start">
-        <h1 className="bg-secondary rounded-lg p-4 m-5 text-center" >How Will Family Makers Strengthen rural libraries?</h1>
+        <h1 className="bg-secondary/80 rounded-lg p-4 m-5 text-center text-grey" >How Will Family Makers Strengthen rural libraries?</h1>
         
 
       </div>

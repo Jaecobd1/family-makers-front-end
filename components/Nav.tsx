@@ -34,15 +34,15 @@ function Nav() {
           <Link href="/" className="p-4">Family Makers</Link>
         </div>
 
-        <div id="links" className="hidden text-white md:flex justify-around w-8/12 items-center text-center gap-3 mr-2">
-                    <Link href="/" >Home</Link>
-                    <Link href="our-team" >Our Team</Link>
-                    <Link href="curriculum" >Family Makers Curriculum</Link>
-                    <Link href="training-materials">Training Materials</Link>
-                    <Link href="publications">Publications</Link>
-                    <Link href="news" >News</Link>
-                    <Link href="gallery">Gallery</Link>
-                    <Link href="contact">Contact</Link>
+        <div id="links" className="hidden text-white md:flex justify-around w-8/12 items-center text-center mr-2 h-full ">
+                    <Link className="navLink" href="/" >Home</Link>
+                    <Link href="our-team" className="navLink" >Our Team</Link>
+                    <Link href="curriculum" className="navLink"  >Family Makers Curriculum</Link>
+                    <Link href="training-materials" className="navLink" >Training Materials</Link>
+                    <Link href="publications" className="navLink" >Publications</Link>
+                    <Link href="news"className="navLink"  >News</Link>
+                    <Link href="gallery" className="navLink" >Gallery</Link>
+                    <Link href="contact" className="navLink" >Contact</Link>
             </div>
             
             <div id="menu" className="md:hidden p-5 ">

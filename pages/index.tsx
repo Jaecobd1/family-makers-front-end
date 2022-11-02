@@ -50,7 +50,7 @@ const Home: NextPage = () => {
 
       <div className="flex w-9/12 justify-center flex-col mx-auto">
         <div className="text-2xl flex justify-start">
-        <h1 className="bg-secondary/80 rounded-lg p-4 m-5 text-center text-grey" >How Will Family Makers Strengthen rural libraries?</h1>
+        <h1 className="bg-secondary/80 rounded-lg p-4 m-5 text-center text-grey" >How Will Family Makers Strengthen Rural Libraries?</h1>
         
 
       </div>

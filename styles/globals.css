@@ -8,6 +8,13 @@
     }
 }
 
+@layer components {
+    .underline {
+        border-bottom: 2px solid black;
+        width: 40vw;
+    }
+}
+
 html,
 body {
     padding: 0;

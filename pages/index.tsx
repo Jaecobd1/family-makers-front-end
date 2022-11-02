@@ -35,7 +35,7 @@ const Home: NextPage = () => {
 
 
          <div className="w-96 h-96 place-self-center">
-          <Image src="/Kids-writing.jpeg" height={1080} width={1920} className="object-cover w-full h-full"></Image>
+          <Image src="/Kids-writing.jpeg" height={1080} width={1920} alt={"Image of kids writing"} className="object-cover w-full h-full"></Image>
         </div>
 
 

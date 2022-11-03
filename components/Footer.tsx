@@ -1,7 +1,7 @@
 import Link from 'next/link'
 function Footer() {
     return (
-        <div className="bg-primary mt-20">
+        <div className="bg-primary mt-20 ">
             <div className="link-container display flex justify-around w-9/12 mx-auto md:flex-row flex-col items-center text-center gap-12 text-white p-5">
                 <Link href="/">Home</Link>
                 <Link href="/our-team">Our Team</Link>

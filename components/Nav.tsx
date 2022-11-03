@@ -34,7 +34,7 @@ function Nav() {
           <Link href="/" className="p-4">Family Makers</Link>
         </div>
 
-        <div id="links" className="hidden text-white md:flex justify-around w-8/12 items-center text-center mr-2 h-full ">
+        <div id="links" className="hidden text-white md:flex justify-around w-8/12 items-center text-center mr-2 h-full text-xs md:text-sm lg:text-base">
                     <Link className="navLink" href="/" >Home</Link>
                     <Link href="our-team" className="navLink" >Our Team</Link>
                     <Link href="curriculum" className="navLink"  >Family Makers Curriculum</Link>

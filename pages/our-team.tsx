@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 
 function ourTeam() {
@@ -22,7 +23,7 @@ function ourTeam() {
                 <div className="underline"></div>
                 </div>
             </div>
-
+            <Image src="/library.svg" height={40} width={40} alt="Library image"></Image>
             <div id="subTitle" className="flex justify-center mt-20">
                 <h2>Research Team</h2>
             </div>

@@ -11,8 +11,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Nav />
       <Component className="z-0"{...pageProps} />
       <Footer />
-      <Script async src = "https://www.googletagmanager.com/gtag/js?id=G-4D9LGJVHQQ" > </Script> 
-      <Script src="../scripts/googleAnalytics.js"></Script>
+      <Script async src = "https://www.googletagmanager.com/gtag/js?id=G-4D9LGJVHQQ" id="Gtag"> </Script> 
+      <Script src="../scripts/googleAnalytics.js" id="gAnalytics"></Script>
 
       </>
   )

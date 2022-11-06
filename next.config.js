@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
     experimental: {
-        nextScriptWorkers: true,
+        nextScriptWorkers: false,
     },
     reactStrictMode: true,
     webpack(config) {

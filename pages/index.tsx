@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       
       <div className="flex md:justify-start justify-center w-9/12 mx-auto flex-col" >
         <h1 className=" rounded-lg p-4 m-5 text-center h-fit text-grey font-bold md:text-4xl  text-2xl" >What is Family Makers?</h1>
-        <p className="w-1/2 text-center m-2 w-96 lg:w-9/12 mb-10 mt-10 mx-auto">Family Makers is a series of online engineering program for elementary-aged children and their caregivers to empower children to become problem solvers. Facilitated by library staff at a rural library, Family Makers provide tablets, hotspots, and engineering tools to support families to design and make engineering solutions for their communities.  </p>
+        <p className="w-96 text-center m-2 lg:w-2/4 mb-10 mt-10 mx-auto">Family Makers is a series of online engineering program for elementary-aged children and their caregivers to empower children to become problem solvers. Facilitated by library staff at a rural library, Family Makers provide tablets, hotspots, and engineering tools to support families to design and make engineering solutions for their communities.  </p>
       </div>
       <div className="md:text-4xl  text-2xl flex  justify-center w-8/12 mx-auto md:justify-end">
        

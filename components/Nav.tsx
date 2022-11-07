@@ -52,7 +52,8 @@ function Nav() {
                 </div>
                
         </div>
-         <div className={!menuActive?"hidden":"flex flex-col items-center justify-around h-5/6 text-white" }>
+            <div className={!menuActive ? "hidden" : "flex flex-col items-center justify-around h-5/6 text-white"}>
+                <Link href="/" onClick={navLinkListener}>Home</Link>
                     <Link href="our-team" onClick={navLinkListener}>Our Team</Link>
                     <Link href="curriculum" onClick={navLinkListener}>Family Makers Curriculum</Link>
                     <Link href="training-materials" onClick={navLinkListener}>Training Materials</Link>

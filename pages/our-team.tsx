@@ -30,7 +30,7 @@ function ourTeam({ researchers }: Props) {
             </div>
             <div className="researchers drop-shadow-lg">
                 {researchers.map(researcher => (
-                    <div className="researcher-item w-96 lg:w-1/4 bg-primary text-white m-20 p-25 rounded-lg">
+                    <div className="researcher-item w-96 lg:w-1/4 bg-primary text-white m-20 p-25 rounded-lg" key={researcher.name}>
                         <div className="title">
                             <h1 className="text-3xl m-5">{researcher.name}</h1>
                             

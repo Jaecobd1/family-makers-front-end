@@ -40,3 +40,25 @@ a {
 * {
     box-sizing: border-box;
 }
+
+.researchers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.researcher-item {
+    width: 300px;
+    margin: 20px;
+    padding: 25px;
+}
+
+.researcher-item .title h1 {
+    text-align: center;
+}
+
+.researcher-item .bio {
+    padding: 20px;
+}

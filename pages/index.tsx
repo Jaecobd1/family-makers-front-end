@@ -18,26 +18,27 @@ const Home: NextPage = () => {
         <div className="w-9/12 h-96 z-0 ">
           <Image src="/group-cheering.jpeg" className="object-cover w-full h-full" height={1920} width={1920} alt="Group of people around computer"></Image>
           <div className="lg:text-6xl md:text-4xl text-2xl flex justify-center absolute bottom-0">
-      <h1 className="rounded-lg p-4  mr-5 ml-5 mb-5 text-white drop-shadow-xl " >Welcome to Family Makers!</h1>
+      <h1 className="rounded-lg p-4  mr-5 ml-5 mb-5 text-white drop-shadow-xl font-bold" >Welcome to Family Makers!</h1>
 
       </div>
         </div>
         
       </div>
       
-      <div className="flex md:justify-start justify-center w-9/12 mx-auto" >
-        <p className="w-1/2 text-center md:text-left m-2 w-96 lg:w-9/12 mb-20 mt-10">Family Makers is a series of online engineering program for elementary-aged children and their caregivers to empower children to become problem solvers. Facilitated by library staff at a rural library, Family Makers provide tablets, hotspots, and engineering tools to support families to design and make engineering solutions for their communities.  </p>
+      <div className="flex md:justify-start justify-center w-9/12 mx-auto flex-col" >
+        <h1 className=" rounded-lg p-4 m-5 text-center h-fit text-grey font-bold md:text-4xl  text-2xl" >What is Family Makers?</h1>
+        <p className="w-1/2 text-center m-2 w-96 lg:w-9/12 mb-10 mt-10 mx-auto">Family Makers is a series of online engineering program for elementary-aged children and their caregivers to empower children to become problem solvers. Facilitated by library staff at a rural library, Family Makers provide tablets, hotspots, and engineering tools to support families to design and make engineering solutions for their communities.  </p>
       </div>
       <div className="md:text-4xl  text-2xl flex  justify-center w-8/12 mx-auto md:justify-end">
        
-        <h1 className="bg-secondary/70 rounded-lg p-4 m-5 text-center h-fit text-grey" >How Will Family Makers Benefit Children?</h1>
+        <h1 className=" rounded-lg p-4 m-5 text-center h-fit text-grey font-bold" >How Will Family Makers Benefit Children?</h1>
         
 
       </div>
       <div className="w-9/12 flex lg:justify-between flex-col lg:flex-row mx-auto items-center" >
 
 
-         <div className=" h-96 place-self-center mx-5 my-20">
+         <div className=" h-96 place-self-center mx-5 mb-20">
           <Image src="/Kids-writing.jpeg" height={1080} width={1920} alt={"Image of kids writing"} className="object-cover w-full h-full"></Image>
         </div>
 
@@ -53,7 +54,7 @@ const Home: NextPage = () => {
 
       <div className="flex w-9/12 justify-center flex-col mx-auto">
         <div className="text-2xl md:text-4xl flex justify-start">
-        <h1 className="bg-secondary/80 rounded-lg p-4 m-5 text-center text-grey" >How Will Family Makers Strengthen Rural Libraries?</h1>
+        <h1 className="rounded-lg p-4 m-5 text-center text-grey font-bold" >How Will Family Makers Strengthen Rural Libraries?</h1>
         
 
       </div>

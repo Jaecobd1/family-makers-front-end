@@ -1,10 +1,10 @@
 import PageNotCreated from '../components/pageNotCreated'
-function curriculum() {
+function publications() {
     return (
         <div>
-            <PageNotCreated/>
+            <PageNotCreated />
         </div>
     )
 }
 
-export default curriculum
+export default publications

@@ -1,5 +1,5 @@
 import PageNotCreated from '../components/pageNotCreated'
-function curriculum() {
+function news() {
     return (
         <div>
             <PageNotCreated/>
@@ -7,4 +7,4 @@ function curriculum() {
     )
 }
 
-export default curriculum
+export default news

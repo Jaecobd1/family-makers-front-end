@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <div className="w-9/12 h-96 z-0 ">
           <Image src="/group-cheering.jpeg" className="object-cover w-full h-full" height={1920} width={1920} alt="Group of people around computer"></Image>
           <div className="lg:text-6xl md:text-4xl text-2xl flex justify-center absolute bottom-0">
-      <h1 className="bg-secondary/70 rounded-lg p-4  mr-5 ml-5 mb-5 text-white " >Welcome to Family Makers!</h1>
+      <h1 className="rounded-lg p-4  mr-5 ml-5 mb-5 text-white drop-shadow-xl " >Welcome to Family Makers!</h1>
 
       </div>
         </div>
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
       <div className="w-9/12 flex lg:justify-between flex-col lg:flex-row mx-auto items-center" >
 
 
-         <div className="w-96 h-96 place-self-center">
+         <div className=" h-96 place-self-center mx-5 my-20">
           <Image src="/Kids-writing.jpeg" height={1080} width={1920} alt={"Image of kids writing"} className="object-cover w-full h-full"></Image>
         </div>
 

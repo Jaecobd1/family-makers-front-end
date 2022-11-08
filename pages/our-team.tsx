@@ -2,18 +2,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getClient, sanityClient } from '../lib/sanity.server'
 import groq from 'groq'
-import { Researchers } from '../lib/typings'
+import { Libraries, Researchers } from '../lib/typings'
 import { urlFor } from '../lib/sanity'
-
-
-
+import Map from '../components/Map'
 interface Props{
     researchers: [Researchers];
+    libraries: [Libraries];
 }
 
-function ourTeam({ researchers }: Props) {
+function ourTeam({ researchers, libraries }: Props) {
 
-
+    console.log(libraries)
     return (
         <div>
             <div id="title" className="text-2xl flex justify-center">
@@ -23,6 +22,9 @@ function ourTeam({ researchers }: Props) {
                 </h1>
                 <div className="underline"></div>
                 </div>
+            </div>
+            <div className="map-contianer w-full h-96">
+                <Map />
             </div>
            
             <div id="subTitle" className="flex justify-center mt-20">
@@ -52,6 +54,7 @@ function ourTeam({ researchers }: Props) {
                     </div>
                 ))}
             </div>
+            
         </div>
     )
 }
@@ -68,11 +71,26 @@ export const getServerSideProps = async () => {
   name,
 }`;
     
+    const libraryQuery = `*[_type == "libraries"]{
+  location{
+  lat,
+  lng
+},
+ email,
+ librarian,
+ contactTitle,
+ state,
+ title,
+ address
+}`
+    
     const researchers = await sanityClient.fetch(query);
 
+    const libraries = await sanityClient.fetch(libraryQuery);
     return {
         props: {
-            researchers
+            researchers,
+            libraries
         }
     }
 }

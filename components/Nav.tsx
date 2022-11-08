@@ -27,14 +27,14 @@ function Nav() {
     }
 
     return (
-        <nav className={!menuActive ? "flex justify-between bg-primary h-24 items-center sticky top-0 z-10" : "h-screen w-screen bg-primary sticky top-0 z-10"} >
+        <nav className={!menuActive ? "flex justify-between rounded-br-xl rounded-bl-xl bg-white h-24 items-center sticky top-0 z-10 drop-shadow-lg " : "h-screen w-screen bg-primary sticky top-0 z-10"} >
             
             <div className="items-center h-24 w-screen flex justify-between">
-                <div className="text-white">
+                <div className="text-primary">
           <Link href="/" className="p-4">Family Makers</Link>
         </div>
 
-        <div id="links" className="hidden text-white md:flex justify-around w-8/12 items-center text-center mr-2 h-full text-xs md:text-sm lg:text-base">
+        <div id="links" className="hidden text-primary md:flex justify-around w-8/12 items-center text-center mr-2 h-full text-xs md:text-sm lg:text-base">
                     <Link className="navLink" href="/" >Home</Link>
                     <Link href="our-team" className="navLink" >Our Team</Link>
                     <Link href="curriculum" className="navLink"  >Family Makers Curriculum</Link>

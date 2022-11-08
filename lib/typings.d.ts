@@ -7,3 +7,13 @@ export interface Researchers {
     linkTwoName: string;
     name: string;
 }
+
+export interface Libraries {
+    location: [lat: string, lng: string];
+    email: string,
+    librarian: string,
+    contactTitle: string,
+    state: string,
+    title: string,
+    address: string,
+}

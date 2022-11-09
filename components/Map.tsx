@@ -22,7 +22,7 @@ function Map(libraries) {
             accessToken: process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN,
             style: 'mapbox://styles/mapbox/streets-v11',
             center: [-74.5, 40],
-            zoom: 1,
+            zoom: 2,
 
         });
 

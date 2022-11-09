@@ -22,7 +22,7 @@ function Map(libraries) {
             accessToken: process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN,
             style: 'mapbox://styles/mapbox/streets-v11',
             center: [-74.5, 40],
-            zoom: 9,
+            zoom: 5,
 
         });
 
@@ -37,14 +37,14 @@ function Map(libraries) {
 
     return (
         <div ref={mapNode} style={{ width: "100%", height: "100%" }} >
-            {libraries.map(library => (
+            {/* {libraries.long.map(library => (
                 <Marker key={library.name}
                     latitude={library.latitude}
                     longitude={library.longitude}
                 >
                 <div>Library</div>
            </Marker>
-            ))}
+            ))} */}
         </div>);
         }
 

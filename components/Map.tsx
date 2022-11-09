@@ -10,7 +10,7 @@ function Map() {
     React.useEffect(() => {
         const node = mapNode.current;
 
-        if (typeof winow === "undefined" || node === null) return;
+        if (typeof window === "undefined" || node === null) return;
 
         const Map = new mapboxgl.Map({
             container: node,

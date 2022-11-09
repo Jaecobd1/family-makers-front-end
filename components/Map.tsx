@@ -1,8 +1,13 @@
 import * as React from 'react'
-import mapboxgl from 'mapbox-gl'
+import mapboxgl, { Marker } from 'mapbox-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
-function Map() {
+function Map(libraries) {
+
+
+    const [selectedLibrary, setSelectedLibrary] = React.useState(null);
+
+
     const [map, setMap] = React.useState<mapboxgl.Map>();
 
     const mapNode = React.useRef(null);
@@ -30,7 +35,17 @@ function Map() {
         };
     }, []);
 
-    return <div ref={mapNode} style={{ width: "100%", height: "100%" }} />;
-}
+    return (
+        <div ref={mapNode} style={{ width: "100%", height: "100%" }} >
+            {libraries.map(library => (
+                <Marker key={library.name}
+                    latitude={library.latitude}
+                    longitude={library.longitude}
+                >
+                <div>Library</div>
+           </Marker>
+            ))}
+        </div>);
+        }
 
 export default Map

@@ -12,7 +12,7 @@ interface Props{
 }
 
 function ourTeam({ researchers, libraries }: Props) {
-    
+
     console.log(libraries)
     return (
         <div>
@@ -24,8 +24,8 @@ function ourTeam({ researchers, libraries }: Props) {
                 <div className="underline"></div>
                 </div>
             </div>
-            <div className="map-contianer w-full h-96">
-                <Map />
+            <div className="map-contianer w-9/12 h-96 m-20 mx-auto">
+                <Map libraries={libraries} />
             </div>
            
             <div id="subTitle" className="flex justify-center mt-20">

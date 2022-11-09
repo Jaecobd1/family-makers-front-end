@@ -4,12 +4,7 @@ import { getClient, sanityClient } from '../lib/sanity.server'
 import groq from 'groq'
 import { Libraries, Researchers } from '../lib/typings'
 import { urlFor } from '../lib/sanity'
-import dynamic from 'next/dynamic'
-
-
-const Map = dynamic(() => import("../components/Map"), {
-    ssr: false
-});
+import Map from '../components/Map'
 
 interface Props{
     researchers: [Researchers];
@@ -17,7 +12,7 @@ interface Props{
 }
 
 function ourTeam({ researchers, libraries }: Props) {
-
+    
     console.log(libraries)
     return (
         <div>

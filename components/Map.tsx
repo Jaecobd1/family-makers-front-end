@@ -1,26 +1,16 @@
-import "mapbox-gl/dist/mapbox-gl.css"
-import ReactMapGL, {Marker, Popup, ViewState } from 'react-map-gl' 
-import { useState, useEffect, useRef } from 'react'
+import { useState } from "react";
+import ReactMapGL from "react-map-gl";
 
-
-interface IProps { }
-
-function Map({ }: IProps) {
-    const [viewport, setViewport] = useState<ViewState>({
-        latitude: 43,
-        longitude: -79,
-        zoom: 10,
-        bearing: 0,
-        pitch: 0,
-        padding: {top:0, bottom: 0, left: 0, right: 0},
+export default function Map() {
+    const [viewport, setViewport] = useState({
+        width: '100%',
+        height: '100%',
+        latitude: 51.5074,
+        longitude: -0.1278,
+        zoom: 10
     });
-    return (
-        <div className="text-black relative  w-screen h-96">
-            <ReactMapGL {...viewport}  
-            mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN} 
-            ></ReactMapGL>
-        </div>
-    )
+    return <ReactMapGL mapStyle="mapbox://styles/mapbox/streets-v11"
+        mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
+        {...viewport}
+    ></ReactMapGL>
 }
-
-export default Map

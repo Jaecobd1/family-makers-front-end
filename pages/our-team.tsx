@@ -4,7 +4,13 @@ import { getClient, sanityClient } from '../lib/sanity.server'
 import groq from 'groq'
 import { Libraries, Researchers } from '../lib/typings'
 import { urlFor } from '../lib/sanity'
-import Map from '../components/Map'
+import dynamic from 'next/dynamic'
+
+
+const Map = dynamic(() => import("../components/Map"), {
+    ssr: false
+});
+
 interface Props{
     researchers: [Researchers];
     libraries: [Libraries];

@@ -65,7 +65,7 @@ function ourTeam({ researchers, libraries }: Props) {
                             
                         </div>
                         <div className="">
-                            <Image src={urlFor(researcher.image).url()!} alt={researcher.name} className="mx-auto rounded-xl object-cover h-56 w-56" height={1080} width={1080}/>
+                            <img src={urlFor(researcher.image).url()!} alt={researcher.name} className="mx-auto rounded-xl object-cover h-56 w-56" height={1080} width={1080}/>
                             </div>
                         <div className="bio">
                             <span>

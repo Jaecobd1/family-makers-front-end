@@ -4,7 +4,6 @@ import { getClient, sanityClient } from '../lib/sanity.server'
 import groq from 'groq'
 import { Libraries, Researchers } from '../lib/typings'
 import { urlFor } from '../lib/sanity'
-import Map from '../components/Map'
 
 interface Props{
     researchers: [Researchers];
@@ -24,9 +23,35 @@ function ourTeam({ researchers, libraries }: Props) {
                 <div className="underline"></div>
                 </div>
             </div>
-            <div className="map-contianer w-9/12 h-96 m-20 mx-auto">
-                <Map libraries={libraries} />
+             <div id="subTitle" className="flex justify-center mt-20">
+                <h2 className="text-4xl">Our Libraries</h2>
             </div>
+
+            <div className="flex flex-wrap justify-center ">
+                {libraries.map((libarary) =>
+                (
+                    <div className="flex flex-col w-96 items-center m-5  border-2 border-primary rounded-xl">
+                        <h1 className="text-2xl underline">{libarary.title }</h1>
+                        <h2>{libarary.city},  {libarary.state}</h2>
+                        
+                        <div className="flex justify-between flex-col  w-96 h-52 p-2 m-5">
+                              <h1 className="text-xl">Library Contact:</h1>
+                            <div className="flex justify-between h-24">
+                                
+                                 <h2 className="p-5 w-42">{libarary.librarian}</h2>
+                            <h2 className="w-1/2 text-right p-5">{libarary.contactTitle}</h2>
+                          </div>
+                            
+                            <a className="underline text-primary hover:text-grey p-5"
+                                href={"mailto:" + libarary.email}>{libarary.email}</a>
+                        </div>
+                    
+
+                </div>
+
+               ))}
+            </div>
+            
            
             <div id="subTitle" className="flex justify-center mt-20">
                 <h2 className="text-4xl">Research Team</h2>
@@ -77,6 +102,7 @@ export const getServerSideProps = async () => {
   lat,
   lng
 },
+ city,
  email,
  librarian,
  contactTitle,

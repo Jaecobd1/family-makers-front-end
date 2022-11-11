@@ -9,7 +9,7 @@
 }
 
 @layer components {
-    .underline {
+    .title .underline {
         border-bottom: 2px solid black;
         width: 40vw;
     }

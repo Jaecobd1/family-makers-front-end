@@ -16,4 +16,5 @@ export interface Libraries {
     state: string,
     title: string,
     address: string,
+    city: string,
 }

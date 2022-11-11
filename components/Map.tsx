@@ -37,14 +37,23 @@ function Map(libraries) {
 
     return (
         <div ref={mapNode} style={{ width: "100%", height: "100%" }} >
-            {/* {libraries.long.map(library => (
-                <Marker key={library.name}
-                    latitude={library.latitude}
-                    longitude={library.longitude}
-                >
-                <div>Library</div>
-           </Marker>
-            ))} */}
+            {console.log(libraries)}
+            { 
+                libraries.map(library => (
+                <Marker
+                    key={library.title}
+                    latitude={library.location.lat}
+                    longitude={library.location.lng} >
+                    <button
+                        onClick={e => {
+                            e.preventDefault();
+                            setSelectedLibrary(library);
+                        }}
+                    >
+                        <Image src="./library.svg" height={100} width={100}></Image>
+                        </button>
+                    </Marker>
+            ))}
         </div>);
         }
 

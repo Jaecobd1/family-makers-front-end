@@ -23,8 +23,38 @@ function ourTeam({ researchers, libraries }: Props) {
                 <div className="underline"></div>
                 </div>
             </div>
-             <div id="subTitle" className="flex justify-center mt-20">
-                <h2 className="text-4xl">Our Libraries</h2>
+            
+            
+           
+            <div id="subTitle" className="flex justify-center mt-20">
+                <h2 className="text-4xl underline">Research Team</h2>
+            </div>
+            <div className="researchers drop-shadow-lg">
+                {researchers.map(researcher => (
+                    <div className="researcher-item w-96 lg:w-1/4  m-20 p-25 rounded-lg" key={researcher.name}>
+                        <div className="title">
+                            <h1 className="text-3xl m-5">{researcher.name}</h1>
+                            
+                            
+                        </div>
+                        <div className="">
+                            <img src={urlFor(researcher.image).url()!} alt={researcher.name} className="mx-auto rounded-xl object-cover h-56 w-56" height={1080} width={1080}/>
+                            </div>
+                        <div className="bio">
+                            <span>
+                                <p className="text-sm">{researcher.bio}</p>
+                            </span>
+                        </div>
+                        <div className="buttons flex justify-between md:flex-row flex-col items-center ">
+                            <Link className="p-5 rounded-xl bg-secondary text-primary w-48 text-center drop-shadow-lg m-5" href={researcher.linkOnehref}>{researcher.linkOnename}</Link>
+                            {researcher.linkTwohref ? <Link className="p-5  border-2 border-black rounded-xl w-48 text-center drop-shadow-lg" href={researcher.linkTwohref}>{researcher.linkTwoName}</Link>: null}
+                           
+                        </div>
+                    </div>
+                ))}
+            </div>
+             <div id="subTitle" className="flex justify-center m-20">
+                <h2 className="text-4xl underline">Our Libraries</h2>
             </div>
 
             <div className="flex flex-wrap justify-center ">
@@ -50,35 +80,6 @@ function ourTeam({ researchers, libraries }: Props) {
                 </div>
 
                ))}
-            </div>
-            
-           
-            <div id="subTitle" className="flex justify-center mt-20">
-                <h2 className="text-4xl">Research Team</h2>
-            </div>
-            <div className="researchers drop-shadow-lg">
-                {researchers.map(researcher => (
-                    <div className="researcher-item w-96 lg:w-1/4  m-20 p-25 rounded-lg" key={researcher.name}>
-                        <div className="title">
-                            <h1 className="text-3xl m-5">{researcher.name}</h1>
-                            
-                            
-                        </div>
-                        <div className="">
-                            <img src={urlFor(researcher.image).url()!} alt={researcher.name} className="mx-auto rounded-xl object-cover h-56 w-56" height={1080} width={1080}/>
-                            </div>
-                        <div className="bio">
-                            <span>
-                                <p className="text-sm">{researcher.bio}</p>
-                            </span>
-                        </div>
-                        <div className="buttons flex justify-between md:flex-row flex-col items-center ">
-                            <Link className="p-5 rounded-xl bg-secondary text-primary w-48 text-center drop-shadow-lg m-5" href={researcher.linkOnehref}>{researcher.linkOnename}</Link>
-                            {researcher.linkTwohref ? <Link className="p-5  border-2 border-black rounded-xl w-48 text-center drop-shadow-lg" href={researcher.linkTwohref}>{researcher.linkTwoName}</Link>: null}
-                           
-                        </div>
-                    </div>
-                ))}
             </div>
             
         </div>

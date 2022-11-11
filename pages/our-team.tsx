@@ -30,7 +30,7 @@ function ourTeam({ researchers, libraries }: Props) {
             <div className="flex flex-wrap justify-center ">
                 {libraries.map((libarary) =>
                 (
-                    <div className="flex flex-col w-96 items-center m-5  border-2 border-primary rounded-xl">
+                    <div className="flex flex-col w-96 items-center m-5  border-2 border-primary rounded-xl" key={libarary.title}>
                         <h1 className="text-2xl underline">{libarary.title }</h1>
                         <h2>{libarary.city},  {libarary.state}</h2>
                         
